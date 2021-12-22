@@ -6,15 +6,23 @@
     <div class="sheet-name_grid">
         <span>Name:&nbsp;<input type="text" name="attr_character_name"/></span>
     </div>
-    
+
     <div class="sheet-heritage_grid">
-        <span>Heritage:&nbsp;<input type="text" name="attr_character_heritage" value="Mixed"/></span>
+        <span>Heritage:&nbsp;<input list="heritage" name="attr_character_heritage" value="Mixed"/>
+        <datalist id="heritage">
+        <option value="Mixed">
+        <option value="A">
+        <option value="B">
+        <option value="C">
+        <option value="D">
+  </datalist>
+        </span>
     </div>
     <div class="sheet-weight_grid">
         <span>Weight:&nbsp;<input type="text" name="attr_character_weight" value="165"/></span>
     </div>
     <div class="sheet-handedness_grid">
-        <span>Handedness:&nbsp;<input type="text" name="attr_character_handedness" value="Left"/></span>
+        <span>Handedness:&nbsp;<input type="option" name="attr_character_handedness" value="Left"/></span>
     </div>
     <div class="sheet-height_grid">
         <span>Height:&nbsp;<input type="text" name="attr_character_height" value="5'9"/></span>
