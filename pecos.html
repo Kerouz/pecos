@@ -19,10 +19,15 @@
         </span>
     </div>
     <div class="sheet-weight_grid">
-        <span>Weight:&nbsp;<input type="text" name="attr_character_weight" value="165"/></span>
+        <span>Weight:&nbsp;<input type="number" name="attr_character_weight" min=90 max=400 value="165"/></span>
     </div>
     <div class="sheet-handedness_grid">
-        <span>Handedness:&nbsp;<input type="option" name="attr_character_handedness" value="Left"/></span>
+        <span>Handedness:&nbsp;<select name="attr_character_handedness" id="handedness" value="left">
+          <option value="right">Right</option>
+          <option value="left">Left</option>
+          <option value="Ambidextrous">Ambidextrous</option>
+        </select>
+        </span>
     </div>
     <div class="sheet-height_grid">
         <span>Height:&nbsp;<input type="text" name="attr_character_height" value="5'9"/></span>
